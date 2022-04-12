@@ -26,7 +26,6 @@ export interface DataType {
 
 function App() {
   const apiKey = process.env.REACT_APP_WEATHER_KEY;
-  console.log(apiKey);
   // unit can be 'metric' or 'imperial', 'standard' by default
   const unit = "metric";
 
