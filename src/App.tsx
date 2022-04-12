@@ -45,7 +45,7 @@ function App() {
 
   const searchWeather = async (location: string): Promise<void> => {
     let resp = await fetch(
-      `http://api.openweathermap.org/data/2.5/weather?q=${location}&units=${unit}&appid=${apiKey}`
+      `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=${unit}&appid=${apiKey}`
     );
     let data = await resp.json();
     console.log("data is", data);
